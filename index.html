@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset class="colonne">
+            <fieldset id="identification">
+                <legend>Identification</legend>
+                    <label>Votre nom:<input type="text" placeholder="Écrire Ici"></label>
+                    <label>Votre prénom:<input type="text"></label>
+                    <label>Votre courriel:<input type="email" required></label>
+                    <label>Téléphone:<input type="tel"></label>
+                    <label>Age:<input type="number" min="0" max="125"></label>
+                    <label>Web:<input type="url"></label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset class="colonne">
+                <fieldset id="vote">
+                    <legend>Votre Couleur</legend>
+                        <label><input type="radio" name="couleur" checked><span></span>Bleu</label>
+                        <label><input type="radio" name="couleur"><span></span>Rouge</label>
+                        <label><input type="radio" name="couleur"><span></span>Vert</label>
+                </fieldset>
+                
+                <fieldset id="options">
+                    <legend>Vos options</legend>
+                    <label><input type="checkbox" checked>Bleu</label>
+                    <label><input type="checkbox">Rouge</label>
+                    <label><input type="checkbox">Vert</label>
+                </fieldset>
+        
+                    <fieldset>
+                        <legend>Vos Commentaires</legend>
+                        <textarea cols="20" rows="5" placeholder="Écrire vos commentaires ici"></textarea>
+                    </fieldset>
+        </fieldset>
+    
+        
+        <fieldset id="boutons">
+                <input type="submit" value="Envoi">
+                <input type="reset" value="Remise à 0">
+                <!--Value dans champs texte récupère sa valeur donc l'input de l'utilisateur-->
+        </fieldset>
+        
+        
+            
+    </form>
+</body>
+</html>
